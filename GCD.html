@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		n1=parseInt(prompt("Enter number:"));
+		n2=parseInt(prompt("Enter number:"));
+		a=0,gcd=0;
+		if(n1>n2){
+			a=n1/2;
+		}
+		else{
+			a=n2/2;
+		}
+		for(i=0;i<=a;i++){
+			if(n1%i==0 && n2%i==0){
+				gcd=a;
+			}
+		}
+		document.write("Greatest Common Divisor "+gcd);
+	</script>
+</body>
+</html>
